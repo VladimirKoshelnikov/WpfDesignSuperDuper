@@ -6,8 +6,46 @@
         xmlns:local="clr-namespace:WpfDesignSuperDuper"
         mc:Ignorable="d"
         Title="MainWindow" 
-        Height="450" Width="800">
-    <Grid>
+        Height="600" 
+        Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
 
-    </Grid>
+    <Border Background="#272535"
+            CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="PlayGround"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="25"/>
+            <StackPanel Grid.Row="2">
+                <RadioButton Content="Home"
+                             Height="30"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+            <TextBlock 
+                Grid.Column="2"
+                Grid.Row="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Text="https://www.youtube.com/watch?v=PzP8mw7JUzI"
+                FontSize="25"
+                Foreground="White"/>
+        </Grid>
+    </Border>
 </Window>
