@@ -33,19 +33,46 @@
                    FontSize="25"/>
             <StackPanel Grid.Row="2">
                 <RadioButton Content="Home"
-                             Height="30"
+                             Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Discovery"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Featured"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+
             </StackPanel>
+            <TextBox
+                Width="240"
+                Height="40"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="5"
+                Grid.Column="1"
+                
+                Style="{StaticResource ModernTextBox}">
+
+            </TextBox>
             <TextBlock 
-                Grid.Column="2"
-                Grid.Row="2"
+                Grid.Column="1"
+                Grid.Row="1"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Text="https://www.youtube.com/watch?v=PzP8mw7JUzI"
                 FontSize="25"
                 Foreground="White"/>
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10">
+                
+            </ContentControl>
         </Grid>
     </Border>
 </Window>

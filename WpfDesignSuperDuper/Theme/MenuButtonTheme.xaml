@@ -6,11 +6,11 @@
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate>
+                    <ControlTemplate TargetType="RadioButton">
                         <Grid VerticalAlignment="Stretch"
                               HorizontalAlignment="Stretch"
                               Background="{TemplateBinding Background}">
-                            <TextBlock Text="Hello"
+                            <TextBlock Text="{TemplateBinding Content}"
                                        VerticalAlignment="Center"/>
 
                         </Grid>
@@ -19,6 +19,7 @@
             </Setter>
 
             <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="50,0,0,0"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
         <Style.Triggers>
