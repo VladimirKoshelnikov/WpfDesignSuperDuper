@@ -12,7 +12,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        FontFamily="/Fonts/#Abel">
     
     <Window.DataContext>
         <viewModel:MainViewModel/>
@@ -35,7 +36,8 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    Foreground="White"
-                   FontSize="25"/>
+                   FontSize="25"
+                   FontFamily="/Fonts/#Abel"/>
             <StackPanel Grid.Row="2">
                 <RadioButton Content="Home"
                              Height="50"
